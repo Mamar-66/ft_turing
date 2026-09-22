@@ -46,8 +46,10 @@ if [ ! -f dune-project ]; then
     echo '(name ft_turing)' >> dune-project
 fi
 
-echo "Regeneration de src/dune..."
-mkdir -p src
-echo '(executable' > src/dune
-echo ' (name main)' >> src/dune
-echo ' (libraries yojson))' >> src/dune
+if [ ! -f src/dune ]; then
+    echo "Generation de src/dune..."
+    mkdir -p src
+    echo '(executable' > src/dune
+    echo ' (name main)' >> src/dune
+    echo ' (libraries yojson))' >> src/dune
+fi
