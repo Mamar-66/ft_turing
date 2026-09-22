@@ -1,0 +1,12 @@
+# Dossiers de compilation Dune
+_build/
+
+# Exécutable généré
+ft_turing
+
+# Fichiers temporaires des éditeurs / OS
+*.swp
+*.o
+*.cmx
+*.cmi
+.DS_Store
